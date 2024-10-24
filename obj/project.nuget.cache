@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eLrqM8GLA8Y=",
+  "dgSpecHash": "Fl3hUv3EnnM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\keila\\Desktop\\net8\\ApiEmpresa.csproj",
+  "projectFilePath": "C:\\Users\\keila\\Desktop\\ApiEmpresa\\ApiEmpresa.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\keila\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\keila\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
