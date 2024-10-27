@@ -20,7 +20,6 @@ namespace ApiEmpresa.Controllers
             _context = context;
         }
 
-        // GET: api/Clientes
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Clientes>>> GetClientes()
         {
@@ -31,7 +30,6 @@ namespace ApiEmpresa.Controllers
             return await _context.Clientes.ToListAsync();
         }
 
-        // GET: api/Clientes/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Clientes>> GetClientes(int id)
         {
@@ -49,8 +47,6 @@ namespace ApiEmpresa.Controllers
             return clientes;
         }
 
-        // PUT: api/Clientes/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutClientes(int id, Clientes clientes)
         {
@@ -80,8 +76,6 @@ namespace ApiEmpresa.Controllers
             return NoContent();
         }
 
-        // POST: api/Clientes
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Clientes>> PostClientes(Clientes clientes)
         {
@@ -94,8 +88,7 @@ namespace ApiEmpresa.Controllers
 
             return CreatedAtAction("GetClientes", new { id = clientes.id_cliente }, clientes);
         }
-
-        // DELETE: api/Clientes/5
+        
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteClientes(int id)
         {
