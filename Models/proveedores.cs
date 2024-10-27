@@ -3,10 +3,11 @@ using System.ComponentModel.DataAnnotations;
 namespace ApiEmpresa.Models;
 public class Proveedor
 {
-    public int IdProveedor { get; set; }
-    public string Nit { get; set; }
-    public string Proveedor { get; set; }
-    public string Direccion { get; set; }
-    public string RazonSocial { get; set; }
-    public DateTime FechaCreacion { get; set; }
+     [Key]
+    public int32 id_proveedor { get; set; }
+    public string? nit { get; set; }
+    public string? proveedor { get; set; }
+    public string? direccion { get; set; }
+    public string? razon_social { get; set; }
+    public DateTime? fecha_creacion { get; set; }
 }
